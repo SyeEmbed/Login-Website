@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width", initial-scale="1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Login Page</title>
+<script type="module" src="firebaseauth.js"></script>
+</head>
+
+<body>
+
+    <div class="container" id="signUp" style="display:none;">
+        <h1 class="title">Register</h1>
+
+        <form method="post" action=""> 
+            <div class="messageDiv" id="signUpMessage" style="display: none;"></div>
+
+            <div class="inputs">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <label for="firstName">First Name</label>
+            </div>
+
+            <div class="inputs">
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <label for="lastName">Last Name</label>
+            </div>
+
+            <div class="inputs">
+                <input type="email" id="rEmail" placeholder="Email" required>
+                <label for="rEmail">Email</label>
+            </div>
+
+            <div class="inputs">
+                <input type="password" id="rPassword" placeholder="Password" required>
+                <label for="rPassword">Password</label>
+            </div>
+
+            <button class="btn" id="submitSignUp">Sign Up</button>
+
+        </form>
+
+            <div class="link">
+                <p>Already a Member?</p>
+                <button id="signInBtn">Sign In</button>  
+            </div>  
+
+    </div>
+
+
+    <div class="container" id="signIn">
+        <h1 class="title">Sign In</h1>
+
+        <form method="post" action=""> 
+            <div class="messageDiv" id="signInMessage" style="display: none;"></div>
+
+            <div class="inputs">
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="email">Email</label>
+            </div>
+
+            <div class="inputs">
+                <input type="password" id="password" placeholder="Password" required>
+                <label for="password">Password</label>
+            </div>
+
+            <button class="btn" id="submitSignIn">Sign In</button>
+
+            <p class="recover">
+                <a href="#">Recover Password</a>
+            </p>
+            
+        </form>
+
+        <div class="link">
+            <p>Don't Have an Account?</p>
+            <button id="signUpBtn">Sign Up</button>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
